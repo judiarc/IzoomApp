@@ -1,0 +1,96 @@
+.visible{
+	visibility:visible;
+}
+
+.hidden{
+	visibility:hidden;
+}
+
+.anchor_active{
+	-webkit-transform: scale(2);
+}
+
+.sample_images:hover{
+
+    opacity: 0.6;
+}
+
+.home-slideshow__anchors .anchor .acnchor_active {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1)
+}
+
+.home-slideshow__anchors .anchor .acnchor_active  {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0)
+}
+.home_image:hover .Photography {
+  opacity: 1;
+}
+.anchor:active{
+	
+	background:blue;
+}
+
+/* arrow buttons on home screen */
+.previous_image{
+		cursor:url("../svg/arrow-home-top.svg"), pointer
+	
+}
+.next_image{
+	cursor:url("../svg/arrow-home.svg"), pointer
+}
+
+.previous_image
+{
+    left: 0;
+    position: absolute;
+    top: 0;
+    height: 190px;
+    width: 91%;
+    z-index: 4;
+    background:green;
+}
+.default
+{
+	background:#32584e;
+	
+}
+.sample_images {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 60%;
+    -webkit-transition: -webkit-transform .7s cubic-bezier(.215, .61, .355, 1);
+    transition: -webkit-transform .7s cubic-bezier(.215, .61, .355, 1);
+    transition: transform .7s cubic-bezier(.215, .61, .355, 1);
+    transition: transform .7s cubic-bezier(.215, .61, .355, 1), -webkit-transform .7s cubic-bezier(.215, .61, .355, 1);
+    width: 80%
+}
+.next_image {
+	left: 0;
+    position: absolute;
+    top: 80%;
+    height: 130px;
+    width: 91%;
+    z-index: 4;
+    background:pink;
+}
+
+.sample_images.Photography{
+	width:900px;
+}
+
+
+.next_image.disabled,
+.previous_image.disabled {
+    display: none
+}
+    .next_image,
+.previous_image
+ {
+    border: 0 none;
+    background: none;
+    padding: 0
+} 
